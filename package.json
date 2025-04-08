@@ -1,0 +1,54 @@
+{
+  "name": "nayud",
+  "version": "1.0.0",
+  "author": {
+    "name": "Dimas Yudha Pratama",
+    "email": "nayud@dimasyudha.com",
+    "url": "https://nayud.dimasyudha.com"
+  },
+  "bugs": {
+    "email": "nayud@dimasyudha.com",
+    "url": "https://github.com/pingdimasyudha/solid-tailwind-tauri-bun/issues"
+  },
+  "cpu": ["x64", "arm64"],
+  "description": "",
+  "homepage": "https://nayud.dimasyudha.com",
+  "license": "MIT",
+  "os": ["darwin", "linux"],
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pingdimasyudha/solid-tailwind-tauri-bun.git"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "build:android": "bun tauri android build",
+    "build:desktop": "bun tauri build",
+    "build:ios": "bun tauri ios build",
+    "build:win-amd64": "bun tauri build --runner cargo-xwin --target x86_64-pc-windows-msvc",
+    "build:win-arm64": "bun tauri build --runner cargo-xwin --target aarch64-pc-windows-msvc",
+    "clean": "rm -rf build src-tauri/{gen,target}",
+    "init:android": "bun tauri android init",
+    "init:ios": "bun tauri ios init",
+    "serve": "vite preview",
+    "start": "vite",
+    "start:android": "bun tauri android dev",
+    "start:desktop": "bun tauri dev",
+    "start:ios": "bun tauri ios dev",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "2.4.1",
+    "@tauri-apps/plugin-notification": "2.2.2",
+    "@tauri-apps/plugin-opener": "2.2.6",
+    "@tauri-apps/plugin-os": "2.2.1",
+    "solid-js": "1.9.5"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "2.4.1",
+    "typescript": "5.8.3",
+    "vite": "6.2.5",
+    "vite-plugin-solid": "2.11.6"
+  }
+}
