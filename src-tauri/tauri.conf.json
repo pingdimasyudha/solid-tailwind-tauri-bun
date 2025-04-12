@@ -5,7 +5,7 @@
   "identifier": "com.dimasyudha.nayud",
   "build": {
     "beforeDevCommand": "bun start",
-    "devUrl": "http://localhost:3000",
+    "devUrl": "http://localhost:8080",
     "beforeBuildCommand": "bun run build",
     "frontendDist": "../build"
   },
